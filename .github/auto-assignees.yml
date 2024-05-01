@@ -1,0 +1,10 @@
+---
+# This assigns a PR to its author
+addAssignees: true
+
+addReviewers: false
+
+assignees:
+  - DrPalmeritta
+
+numberOfAssignees: 1

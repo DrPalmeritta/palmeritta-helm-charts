@@ -20,6 +20,7 @@ jobs:
           version: v3.7.0
       - name: Update Index
         run: |
+          cd docs
           helm repo index .
           git config --global user.email "niki98tos@gmail.com"
           git config --global user.name "DrPalmeritta"
