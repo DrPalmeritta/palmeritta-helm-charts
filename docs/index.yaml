@@ -3,7 +3,38 @@ entries:
   kube-prometheus-stack:
   - apiVersion: v2
     appVersion: v0.71.2
-    created: "2024-04-30T13:39:00.922536963Z"
+    created: "2024-05-01T12:09:49.139529185Z"
+    dependencies:
+    - condition: crds.enabled
+      name: crds
+      repository: ""
+      version: 0.0.0
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.16.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.30.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 7.3.*
+    description: kube-prometheus-stack helm chart for local microk8s
+    digest: e8d990f37484e1cf76c20fc17da871dfb65dbc2a904624eebbf69f6d1c9ed0c3
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: zalupa@gmail.com
+      name: nikitaevdokimov
+    name: kube-prometheus-stack
+    type: application
+    urls:
+    - kube-prometheus-stack-56.21.14.tgz
+    version: 56.21.14
+  - apiVersion: v2
+    appVersion: v0.71.2
+    created: "2024-05-01T12:09:49.093382898Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -42,7 +73,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.71.2
-    created: "2024-04-30T13:39:00.859755806Z"
+    created: "2024-05-01T12:09:49.051790334Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -78,4 +109,4 @@ entries:
     urls:
     - kube-prometheus-stack-56.21.12.tgz
     version: 56.21.12
-generated: "2024-04-30T13:39:00.814506662Z"
+generated: "2024-05-01T12:09:49.006955304Z"
