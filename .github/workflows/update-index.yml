@@ -1,4 +1,5 @@
-name: Update Index
+---
+name: "Update chart`s index"
 
 on:
   push:
